@@ -1,0 +1,533 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Universal Styles*/
+
+@font-face {
+    font-family: "Montserrat";
+    src:
+    url(/assets/Montserrat/Montserrat-VariableFont_wght.ttf) format(TrueType);
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.875rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/*Container Utility Class & Media Queries*/
+
+.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+/* XXL */
+
+@media only screen and (1440px < width <= 2560px) {
+    .container {
+        max-width: 2560px;
+    }
+}
+
+/* XL */
+
+@media only screen and (1024px < width <= 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+/* L */
+
+@media only screen and (768px < width <= 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+    
+    #nav ul a {
+        font-size: 90%;
+    }
+
+    .hero-text h1 {
+        text-align: center;
+        line-height: 2;
+    }
+
+    .hero-text h3 {
+        padding: 0 5% 5%;
+        text-align: center;
+    }
+
+    section#pitch {
+        height: 30vh;
+        padding: 4em 1em;
+        justify-content: space-evenly;
+    }
+
+    #pitch h2,
+    #pitch h3 {
+        line-height: 1.4;
+    }
+
+    #pitch h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #pitch h3 {
+        width: 70%;
+        font-size: 1.375rem;
+    }
+
+    #quote-pic {
+        max-height: 45vh;
+        padding-bottom: 1em;
+        justify-items: space-evenly;
+    }
+
+    #quote-pic div:nth-child(1) {
+        display: none;
+    }
+
+    .quotepic img:last-child {
+        max-height: 80%;
+        transform: scale(80%);
+        align-self: center;
+    }
+
+    .quotepic blockquote p {
+        line-height: 1.4;
+        padding-left: 0.5em;
+    }
+
+    .separator-line {
+        display: none;
+    }
+}
+
+/* M */
+
+@media only screen and (425px < width <= 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    #nav ul a {
+        font-size: 90%;
+    }
+
+    .hero-text h1 {
+        text-align: center;
+        line-height: 2;
+    }
+
+    .hero-text h3 {
+        display: none;
+    }
+
+    section#pitch {
+        height: 40vh;
+        padding: 4em 1em;
+        justify-content: space-evenly;
+    }
+
+    #pitch h2,
+    #pitch h3 {
+        line-height: 1.4;
+        
+    }
+
+    #pitch h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #pitch h3 {
+        width: 70%;
+        font-size: 1.375rem;
+    }
+
+    #quote-pic {
+        max-height: 45vh;
+        padding-bottom: 1em;
+        justify-items: space-evenly;
+    }
+
+    #quote-pic div:nth-child(1) {
+        display: none;
+    }
+
+    .quotepic img:last-child {
+        max-height: 80%;
+        transform: scale(80%);
+        align-self: center;
+    }
+
+    .quotepic blockquote p {
+        line-height: 1.4;
+        padding-left: 0.5em;
+    }
+
+    .separator-line {
+        display: none;
+    }
+}
+
+/* S */
+
+@media only screen and (375px < width <= 425px) {
+    .container {
+        max-width: 425px;
+    }
+
+    #nav ul a {
+        font-size: 80%;
+        padding: 0 1em;
+    }
+
+    .hero.container  {
+        max-height: 60vh;
+    }
+
+    div.hero-text  {
+        padding: 2em;
+        transform: translate(22%, -20%)
+    }
+
+    .hero-text h1 {
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .hero-text h3 {
+        display: none;
+    }
+
+    section#pitch {
+        height: 40vh;
+        padding: 2em 0.5em;
+        justify-content: space-evenly;
+    }
+
+    #pitch h2,
+    #pitch h3 {
+        line-height: 1.4;
+        
+    }
+
+    #pitch h2 {
+        font-size: 100%;
+        font-weight: 500;
+    }
+
+    #pitch h3 {
+        width: 70%;
+        font-size: 90%;
+    }
+
+    #quote-pic {
+        display: none;
+    }
+
+   .footer {
+    background-color: hsl(27, 12%, 71%);
+    line-height: 1.4;
+   }
+}
+
+/* XS */
+
+@media only screen and (320px < width <= 375px) {
+    .container {
+        max-width: 375px;
+    }
+
+    #nav ul a {
+        font-size: 80%;
+        padding: 0 1em;
+    }
+
+    .hero.container  {
+        max-height: 60vh;
+    }
+
+    div.hero-text  {
+        padding: 2em;
+        transform: translate(20%, -20%)
+    }
+
+    .hero-text h1 {
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .hero-text h3 {
+        display: none;
+    }
+
+    #quote-pic {
+        display: none;
+    }
+
+    .quick-pitch h3 {
+        line-height: 1.4;
+    }
+
+    .quick-pitch h2 {
+        display: none;
+    }
+
+   .footer {
+    background-color: hsl(27, 12%, 71%);
+    line-height: 1.4;
+   }
+}
+
+/* XXS */
+@media only screen and (0 <= width <= 320px) {
+    .container {
+        max-width: 320px;
+    }
+
+    #nav ul a {
+        font-size: 80%;
+        padding: 0 1em;
+    }
+
+    .navbar ul li:nth-child(4) {
+        display: none;
+    }
+
+    .hero.container  {
+        max-height: 60vh;
+    }
+
+    div.hero-text  {
+        padding: 2em;
+        transform: translate(16%, -20%)
+    }
+
+    .hero-text h1 {
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .hero-text h3 {
+        display: none;
+    }
+
+    #quote-pic {
+        display: none;
+    }
+
+    .quick-pitch h3 {
+        line-height: 1.4;
+    }
+
+    .quick-pitch h2 {
+        display: none;
+    }
+
+   .footer {
+    background-color: hsl(27, 12%, 71%);
+    line-height: 1.4;
+   }
+}
+
+/*Header*/
+
+#header {
+    height: 10vh;
+    background-color: hsl(210, 3%, 85%);
+    max-width: 100%;
+}
+
+.navbar {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul a {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: hsl(187, 30%, 53%);
+    text-decoration: none;
+    padding: 1em 3em;
+}
+
+/*Hero Image Section*/
+
+.hero {
+    height: 100vh;
+    background-image: url(/assets/teas_in_jars.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(45, 35%, 44%);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 35%;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+    background-color: hsl(45, 35%, 44%);
+    height: 20vh;
+    border: 3px solid hsl(39, 17%, 20%);
+    transform: translateX(50%);
+}
+.hero h1,
+.hero h3 {
+    font-weight: 800;
+    color: hsl(39, 17%, 20%);
+}
+
+/*Quick Pitch Section*/
+
+.quick-pitch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh;
+    color: hsl(39, 17%, 20%);
+    background-color: hsl(187, 30%, 53%);
+    font-weight: 800;
+    text-align: center;
+}
+
+.quick-pitch h2 {
+    font-weight: 600;
+    line-height: 1.75;
+    width: 70%;
+}
+
+/*Image with quote section*/
+
+#quote-pic {
+    height: 100vh;
+    background-color: hsl(27, 12%, 71%);
+}
+
+.quotepic  {
+    display: flex;
+    flex: 1 1 30%;
+    height: 50vh;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+
+hr {
+    color: hsla(45, 35%, 44%, 0.8);
+    border: 1px solid;
+
+}
+
+div.img {
+    display: flex;
+    max-width: 50%;
+    height: 100%;
+}
+
+.img img {
+    min-width: 100%;
+    height: auto;
+    flex: 1 1 30%;
+    transform: scale(80%);
+}
+
+.quotepic blockquote {
+    flex: 1 1 30%;
+    color: hsl(39, 17%, 20%);
+    font-size: 1.375rem;
+    align-self: center;
+    font-weight: 600;
+    line-height: 1.5;
+    font-style: italic;
+    padding: 0 1em;
+}
+
+.two.img img {
+    transform: scale(80%);
+    padding-bottom: 1.5em;
+}
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    max-height: 10vh;
+    color: hsl(39, 17%, 20%);
+    background-color: hsl(187, 30%, 53%);
+    padding: 2em;
+}
