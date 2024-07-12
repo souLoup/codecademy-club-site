@@ -58,7 +58,7 @@ table {
 @font-face {
     font-family: "Montserrat";
     src:
-    url(/assets/Montserrat/Montserrat-VariableFont_wght.ttf) format(TrueType);
+    url(assets/Montserrat/Montserrat-VariableFont_wght.ttf) format(TrueType);
 }
 
 h1 {
@@ -427,7 +427,7 @@ h3 {
 
 .hero {
     height: 100vh;
-    background-image: url(/assets/teas_in_jars.jpg);
+    background-image: url(assets/teas_in_jars.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: hsl(45, 35%, 44%);
